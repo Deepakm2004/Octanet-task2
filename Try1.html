@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Zenith Palace.com"</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your styles for the chat button and popup here */
+        #chat-popup {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #chat-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #chat-message {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Zenith Palace</h1>
+            </div>
+            <ul>
+                <li><a href="Try1.html">Home</a></li>
+                <li><a href="room.html">Rooms</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2><font color="yellow">Welcome to Our Hotel</font></h2>
+            <p><font color="white">Your Perfect Getaway Awaits</font></p>
+            <a href="#" class="btn">Book Now</a>
+        </div>
+    </section>
+     <!-- Chat button and popup -->
+     <button id="chat-btn">Chat with Us</button>
+     <div id="chat-popup">
+         <input type="text" id="chat-message" placeholder="Type your message...">
+         <button onclick="sendMessage()">Send</button>
+         <p>Contact us via chat!</p>
+         <button onclick="closeChat()">Close</button>
+     </div>
+
+    <section class="about">
+        <div class="about-content">
+            <h3><font color="white">About Us</font></h3>
+            <p><font color="white">Experience comfort and luxury at our world-class hotel. We offer a wide range of rooms and services to make your stay memorable.</font></p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hotel Booking. All rights reserved.</p>
+    </footer>
+    <!-- JavaScript to toggle the chat popup -->
+    <script>
+        function openChat() {
+            document.getElementById("chat-popup").style.display = "block";
+        }
+
+        function closeChat() {
+            document.getElementById("chat-popup").style.display = "none";
+        }
+        function sendMessage() {
+            // Replace this with the actual logic to send the message
+            var message = document.getElementById("chat-message").value;
+            alert("Message sent: " + message);
+        }
+
+        document.getElementById("chat-btn").addEventListener("click", openChat);
+    </script>
+</body>
+</html>

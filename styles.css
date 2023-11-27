@@ -1,0 +1,105 @@
+/* styles.css */
+body {
+    background-image: url("hotel2.jpeg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(67, 56, 57, 0.942);
+    color: #f4f4f4;
+    padding: 0px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background-image: url('');
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.hero-content h2 {
+    color: white;
+    text-shadow: 3px 3px 5px rgba(211, 198, 198, 0.704), 0.5); /* Adjust the values for the desired shadow effect */
+    text-align: center;
+}
+
+
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.about-content {
+    border: 1px solid rgba(230, 225, 225, 0.955); /* Adjust the last value for transparency */
+    border-radius: 10px; /* Adjust the border radius as needed */
+    padding: 15px;
+    box-shadow: 2 2 10px rgba(112, 3, 3, 0.1)966)/* Optional: Add a subtle shadow for a 3D effect */
+}
+
+.blog-posts {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.post h3 {
+    font-size: 24px;
+    background-color: #f9f9f9;
+}
+
+.post p {
+    font-size: 16px;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
